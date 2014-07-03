@@ -52,7 +52,7 @@
 
 - (NSString *)zen_dashed
 {
-    return [self replaceIdentifierWithString:@"-"];
+    return [[self lowerCaseFirstLetter] replaceIdentifierWithString:@"-"];
 }
 
 - (NSString *)zen_dotNetCase
@@ -92,12 +92,12 @@
 
 - (NSString *)zen_underscore
 {
-    return [self replaceIdentifierWithString:@"_"];
+    return [[self lowerCaseFirstLetter] replaceIdentifierWithString:@"_"];
 }
 
 - (NSString *)zen_upperCamelCase
 {
-    return [self upperCaseFirstLetter];
+    return [[self zen_camelCase] upperCaseFirstLetter];
 }
 
 #pragma mark - Private methods

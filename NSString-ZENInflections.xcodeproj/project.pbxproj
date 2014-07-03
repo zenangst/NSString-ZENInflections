@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		BD7EE3741965CF2300697FB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7EE3731965CF2300697FB2 /* XCTest.framework */; };
 		BD7EE37A1965CF2300697FB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD7EE3781965CF2300697FB2 /* InfoPlist.strings */; };
-		BD7EE37C1965CF2300697FB2 /* NSString_ZENInflectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */; };
 		BD7EE38C1965CFE700697FB2 /* NSString+ZENInflections.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7EE38B1965CFE700697FB2 /* NSString+ZENInflections.m */; };
+		BD7EE38F1965D60200697FB2 /* NSString_ZENInflectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7EE38E1965D60200697FB2 /* NSString_ZENInflectionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +18,10 @@
 		BD7EE3731965CF2300697FB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BD7EE3771965CF2300697FB2 /* NSString-ZENInflectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSString-ZENInflectionsTests-Info.plist"; sourceTree = "<group>"; };
 		BD7EE3791965CF2300697FB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSString_ZENInflectionsTests.m; sourceTree = "<group>"; };
 		BD7EE37D1965CF2300697FB2 /* NSString-ZENInflectionsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString-ZENInflectionsTests-Prefix.pch"; sourceTree = "<group>"; };
 		BD7EE38A1965CFE700697FB2 /* NSString+ZENInflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZENInflections.h"; sourceTree = "<group>"; };
 		BD7EE38B1965CFE700697FB2 /* NSString+ZENInflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZENInflections.m"; sourceTree = "<group>"; };
+		BD7EE38E1965D60200697FB2 /* NSString_ZENInflectionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_ZENInflectionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 		BD7EE3751965CF2300697FB2 /* NSString-ZENInflectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */,
+				BD7EE38E1965D60200697FB2 /* NSString_ZENInflectionsTests.m */,
 				BD7EE3761965CF2300697FB2 /* Supporting Files */,
 			);
 			path = "NSString-ZENInflectionsTests";
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7EE38C1965CFE700697FB2 /* NSString+ZENInflections.m in Sources */,
-				BD7EE37C1965CF2300697FB2 /* NSString_ZENInflectionsTests.m in Sources */,
+				BD7EE38F1965D60200697FB2 /* NSString_ZENInflectionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
