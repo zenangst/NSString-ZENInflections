@@ -6,14 +6,98 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD7EE3741965CF2300697FB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7EE3731965CF2300697FB2 /* XCTest.framework */; };
+		BD7EE37A1965CF2300697FB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD7EE3781965CF2300697FB2 /* InfoPlist.strings */; };
+		BD7EE37C1965CF2300697FB2 /* NSString_ZENInflectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD7EE3701965CF2300697FB2 /* NSString-ZENInflectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSString-ZENInflectionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7EE3731965CF2300697FB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BD7EE3771965CF2300697FB2 /* NSString-ZENInflectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSString-ZENInflectionsTests-Info.plist"; sourceTree = "<group>"; };
+		BD7EE3791965CF2300697FB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSString_ZENInflectionsTests.m; sourceTree = "<group>"; };
+		BD7EE37D1965CF2300697FB2 /* NSString-ZENInflectionsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString-ZENInflectionsTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD7EE36D1965CF2300697FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7EE3741965CF2300697FB2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		BD7EE34C1965CDB800697FB2 = {
 			isa = PBXGroup;
 			children = (
+				BD7EE3751965CF2300697FB2 /* NSString-ZENInflectionsTests */,
+				BD7EE3721965CF2300697FB2 /* Frameworks */,
+				BD7EE3711965CF2300697FB2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		BD7EE3711965CF2300697FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7EE3701965CF2300697FB2 /* NSString-ZENInflectionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7EE3721965CF2300697FB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD7EE3731965CF2300697FB2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD7EE3751965CF2300697FB2 /* NSString-ZENInflectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7EE37B1965CF2300697FB2 /* NSString_ZENInflectionsTests.m */,
+				BD7EE3761965CF2300697FB2 /* Supporting Files */,
+			);
+			path = "NSString-ZENInflectionsTests";
+			sourceTree = "<group>";
+		};
+		BD7EE3761965CF2300697FB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD7EE3771965CF2300697FB2 /* NSString-ZENInflectionsTests-Info.plist */,
+				BD7EE3781965CF2300697FB2 /* InfoPlist.strings */,
+				BD7EE37D1965CF2300697FB2 /* NSString-ZENInflectionsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD7EE36F1965CF2300697FB2 /* NSString-ZENInflectionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7EE3801965CF2300697FB2 /* Build configuration list for PBXNativeTarget "NSString-ZENInflectionsTests" */;
+			buildPhases = (
+				BD7EE36C1965CF2300697FB2 /* Sources */,
+				BD7EE36D1965CF2300697FB2 /* Frameworks */,
+				BD7EE36E1965CF2300697FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSString-ZENInflectionsTests";
+			productName = "NSString-ZENInflectionsTests";
+			productReference = BD7EE3701965CF2300697FB2 /* NSString-ZENInflectionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BD7EE34D1965CDB800697FB2 /* Project object */ = {
@@ -29,12 +113,47 @@
 				en,
 			);
 			mainGroup = BD7EE34C1965CDB800697FB2;
+			productRefGroup = BD7EE3711965CF2300697FB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BD7EE36F1965CF2300697FB2 /* NSString-ZENInflectionsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7EE36E1965CF2300697FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7EE37A1965CF2300697FB2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD7EE36C1965CF2300697FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7EE37C1965CF2300697FB2 /* NSString_ZENInflectionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD7EE3781965CF2300697FB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7EE3791965CF2300697FB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BD7EE3511965CDB800697FB2 /* Debug */ = {
@@ -49,6 +168,94 @@
 			};
 			name = Release;
 		};
+		BD7EE37E1965CF2300697FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSString-ZENInflectionsTests/NSString-ZENInflectionsTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "NSString-ZENInflectionsTests/NSString-ZENInflectionsTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BD7EE37F1965CF2300697FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSString-ZENInflectionsTests/NSString-ZENInflectionsTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "NSString-ZENInflectionsTests/NSString-ZENInflectionsTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -60,6 +267,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BD7EE3801965CF2300697FB2 /* Build configuration list for PBXNativeTarget "NSString-ZENInflectionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7EE37E1965CF2300697FB2 /* Debug */,
+				BD7EE37F1965CF2300697FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
