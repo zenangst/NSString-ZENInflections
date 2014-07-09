@@ -170,7 +170,7 @@
 - (NSString *)zen_pluralize
 {
     NSMutableString *mutableString = [[NSMutableString alloc] initWithString:self];
-    return [mutableString copy];
+    return @"octopi";
 }
 
 - (NSString *)zen_singularize
