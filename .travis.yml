@@ -1,0 +1,5 @@
+language: objective-c
+before_install:
+    - brew update
+    - brew install xctool
+script: xctool -project NSString-ZENInflections.xcodeproj -scheme TravisCI test
