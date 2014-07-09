@@ -139,22 +139,21 @@
     NSCharacterSet *identifierSet = [NSCharacterSet characterSetWithCharactersInString:@"_- "];
 
     NSCharacterSet *alphanumericSet = [NSCharacterSet alphanumericCharacterSet];
-    NSCharacterSet *uppercaseSet = [NSCharacterSet uppercaseLetterCharacterSet];
-    NSCharacterSet *lowercaseSet = [NSCharacterSet lowercaseLetterCharacterSet];
+    NSCharacterSet *uppercaseSet    = [NSCharacterSet uppercaseLetterCharacterSet];
+    NSCharacterSet *lowercaseSet    = [NSCharacterSet lowercaseLetterCharacterSet];
 
     NSString *buffer = nil;
     NSMutableString *output = [NSMutableString string];
 
     while (!scanner.isAtEnd) {
-        if ([scanner scanCharactersFromSet:identifierSet intoString:&buffer]) {
-            continue;
-        }
+        if ([scanner scanCharactersFromSet:identifierSet intoString:&buffer]) continue;
 
         if ([replacementString length]) {
             if ([scanner scanCharactersFromSet:uppercaseSet intoString:&buffer]) {
                 [output appendString:replacementString];
                 [output appendString:[buffer lowercaseString]];
             }
+
             if ([scanner scanCharactersFromSet:lowercaseSet intoString:&buffer]) {
                 [output appendString:[buffer lowercaseString]];
             }
