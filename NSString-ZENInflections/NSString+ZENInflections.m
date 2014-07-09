@@ -9,6 +9,7 @@
 #import "NSString+ZENInflections.h"
 
 @implementation NSString (ZENInflections)
+
 #pragma mark - Class methods
 
 + (NSString *)zen_stringWithCamelCase:(NSString *)string
@@ -35,6 +36,12 @@
 {
     return [string zen_pluralize];
 }
+
++ (NSString *)zen_stringWithSingularize:(NSString *)string
+{
+    return [string zen_singularize];
+}
+
 #pragma mark - Alias methods
 
 + (NSString *)zen_stringWithSnakeCase:(NSString *)string
@@ -162,6 +169,11 @@
 }
 
 - (NSString *)zen_pluralize
+{
+    return nil;
+}
+
+- (NSString *)zen_singularize
 {
     return nil;
 }
