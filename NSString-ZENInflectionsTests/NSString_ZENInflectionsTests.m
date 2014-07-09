@@ -55,4 +55,11 @@
     XCTAssertTrue([testString isEqualToString:@"zen_angst"], @"String is dot net case");
 }
 
+- (void)testPluralize
+{
+    NSString *testString = [NSString zen_stringWithPluralize:@"octopus"];
+
+    XCTAssertTrue([testString isEqualToString:@"octopi"], @"Plural of octopus is octopi");
+}
+
 @end

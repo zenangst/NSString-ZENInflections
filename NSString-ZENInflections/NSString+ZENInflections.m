@@ -169,7 +169,8 @@
 
 - (NSString *)zen_pluralize
 {
-    return nil;
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithString:self];
+    return [mutableString copy];
 }
 
 - (NSString *)zen_singularize

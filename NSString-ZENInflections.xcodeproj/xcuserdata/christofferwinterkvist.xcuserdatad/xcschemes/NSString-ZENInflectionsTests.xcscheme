@@ -16,7 +16,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD7EE3561965CEA600697FB2"
+               BlueprintIdentifier = "BD7EE36F1965CF2300697FB2"
                BuildableName = "NSString-ZENInflectionsTests.xctest"
                BlueprintName = "NSString-ZENInflectionsTests"
                ReferencedContainer = "container:NSString-ZENInflections.xcodeproj">
