@@ -1,0 +1,5 @@
+[
+    "-project",       "NSString-ZENInflections.xcodeproj",
+    "-scheme",        "TravisCI",
+    "-configuration", "Debug"
+]
