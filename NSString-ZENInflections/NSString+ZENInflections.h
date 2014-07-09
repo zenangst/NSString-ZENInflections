@@ -17,6 +17,7 @@
 
 + (NSString *)zen_stringWithSnakeCase:(NSString *)string;
 
++ (NSString *)zen_stringWithPluralize:(NSString *)string;
 - (NSString *)zen_camelCase;
 - (NSString *)zen_classify;
 - (NSString *)zen_dashed;
@@ -30,5 +31,6 @@
 - (NSString *)zen_underscore;
 - (NSString *)zen_upperCamelCase;
 
+- (NSString *)zen_pluralize;
 
 @end

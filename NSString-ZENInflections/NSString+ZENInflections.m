@@ -31,6 +31,10 @@
     return [string zen_underscore];
 }
 
++ (NSString *)zen_stringWithPluralize:(NSString *)string
+{
+    return [string zen_pluralize];
+}
 #pragma mark - Alias methods
 
 + (NSString *)zen_stringWithSnakeCase:(NSString *)string
@@ -156,4 +160,10 @@
 
     return [output copy];
 }
+
+- (NSString *)zen_pluralize
+{
+    return nil;
+}
+
 @end
