@@ -9,6 +9,8 @@ Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of
 + (NSString *)zen_stringWithDashedCase:(NSString *)string;
 + (NSString *)zen_stringWithUnderscoreCase:(NSString *)string;
 + (NSString *)zen_stringWithSnakeCase:(NSString *)string;
++ (NSString *)zen_stringWithHumanizeUppercase:(NSString *)string;
++ (NSString *)zen_stringWithHumanizeLowercase:(NSString *)string;
 
 - (NSString *)zen_camelCase;
 - (NSString *)zen_classify;
@@ -22,4 +24,6 @@ Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of
 - (NSString *)zen_snakeCase;
 - (NSString *)zen_underscore;
 - (NSString *)zen_upperCamelCase;
+- (NSString *)zen_humanizeUppercase;
+- (NSString *)zen_humanizeLowercase;
 ```
