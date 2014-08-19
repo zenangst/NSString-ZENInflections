@@ -55,4 +55,18 @@
     XCTAssertTrue([testString isEqualToString:@"zen_angst"], @"String is dot net case");
 }
 
+- (void)testHumanizeUppercase
+{
+    NSString *testString = [NSString zen_stringWithHumanizeUppercase:@"phoneNumber"];
+
+    XCTAssertTrue([testString isEqualToString:@"Phone Number"], @"String is humanized uppercase");
+}
+
+- (void)testHumanizeLowercase
+{
+    NSString *testString = [NSString zen_stringWithHumanizeLowercase:@"phoneNumber"];
+
+    XCTAssertTrue([testString isEqualToString:@"phone number"], @"String is humanized lowercase");
+}
+
 @end

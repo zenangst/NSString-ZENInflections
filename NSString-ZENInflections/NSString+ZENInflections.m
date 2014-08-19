@@ -31,6 +31,16 @@
     return [string zen_underscore];
 }
 
++ (NSString *)zen_stringWithHumanizeUppercase:(NSString *)string
+{
+    return [string zen_humanizeUppercase];
+}
+
++ (NSString *)zen_stringWithHumanizeLowercase:(NSString *)string
+{
+    return [string zen_humanizeLowercase];
+}
+
 #pragma mark - Alias methods
 
 + (NSString *)zen_stringWithSnakeCase:(NSString *)string
@@ -98,6 +108,16 @@
 - (NSString *)zen_upperCamelCase
 {
     return [[self zen_camelCase] upperCaseFirstLetter];
+}
+
+- (NSString *)zen_humanizeUppercase
+{
+    return [[self replaceIdentifierWithString:@" "] capitalizedString];
+}
+
+- (NSString *)zen_humanizeLowercase
+{
+    return [[self replaceIdentifierWithString:@" "] lowercaseString];
 }
 
 #pragma mark - Private methods
