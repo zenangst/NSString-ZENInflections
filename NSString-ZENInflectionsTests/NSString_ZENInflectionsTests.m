@@ -12,42 +12,42 @@
 {
     NSString *testString = [NSString zen_stringWithCamelCase:@"zen-angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zenAngst"], @"String is camel case");
+    XCTAssertEqualObjects(testString, @"zenAngst");
 }
 
 - (void)testClassifiedCase
 {
     NSString *testString = [NSString zen_stringWithClassifiedCase:@"zen_angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"ZenAngst"], @"String is classified case");
+    XCTAssertEqualObjects(testString, @"ZenAngst");
 }
 
 - (void)testDashedCase
 {
     NSString *testString = [NSString zen_stringWithDashedCase:@"ZenAngst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zen-angst"], @"String is dashed case");
+    XCTAssertEqualObjects(testString, @"zen-angst");
 }
 
 - (void)testUnderscoreCase
 {
     NSString *testString = [NSString zen_stringWithUnderscoreCase:@"Zen-Angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zen_angst"], @"String is dot net case");
+    XCTAssertEqualObjects(testString, @"zen_angst");
 }
 
 - (void)testHumanizeUppercase
 {
     NSString *testString = [NSString zen_stringWithHumanizeUppercase:@"phoneNumber"];
 
-    XCTAssertTrue([testString isEqualToString:@"Phone Number"], @"String is humanized uppercase");
+    XCTAssertEqualObjects(testString, @"Phone Number");
 }
 
 - (void)testHumanizeLowercase
 {
     NSString *testString = [NSString zen_stringWithHumanizeLowercase:@"phoneNumber"];
 
-    XCTAssertTrue([testString isEqualToString:@"phone number"], @"String is humanized lowercase");
+    XCTAssertEqualObjects(testString, @"phone number");
 }
 
 @end
