@@ -1,12 +1,5 @@
-//
-//  NSString_ZENInflectionsTests.m
-//  NSString-ZENInflectionsTests
-//
-//  Created by Christoffer Winterkvist on 7/3/14.
-//
-//
+@import XCTest;
 
-#import <XCTest/XCTest.h>
 #import "NSString+ZENInflections.h"
 
 @interface NSString_ZENInflectionsTests : XCTestCase
@@ -15,58 +8,54 @@
 
 @implementation NSString_ZENInflectionsTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testCamelCase
 {
     NSString *testString = [NSString zen_stringWithCamelCase:@"zen-angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zenAngst"], @"String is camel case");
+    XCTAssertEqualObjects(testString, @"zenAngst");
+
+    testString = [NSString zen_stringWithCamelCase:@"random[0].hello-mom"];
+
+    XCTAssertNil(testString);
+
+    testString = [NSString zen_stringWithCamelCase:@"random.hello"];
+
+    XCTAssertNil(testString);
 }
 
 - (void)testClassifiedCase
 {
     NSString *testString = [NSString zen_stringWithClassifiedCase:@"zen_angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"ZenAngst"], @"String is classified case");
+    XCTAssertEqualObjects(testString, @"ZenAngst");
 }
 
 - (void)testDashedCase
 {
     NSString *testString = [NSString zen_stringWithDashedCase:@"ZenAngst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zen-angst"], @"String is dashed case");
+    XCTAssertEqualObjects(testString, @"zen-angst");
 }
 
 - (void)testUnderscoreCase
 {
     NSString *testString = [NSString zen_stringWithUnderscoreCase:@"Zen-Angst"];
 
-    XCTAssertTrue([testString isEqualToString:@"zen_angst"], @"String is dot net case");
+    XCTAssertEqualObjects(testString, @"zen_angst");
 }
 
 - (void)testHumanizeUppercase
 {
     NSString *testString = [NSString zen_stringWithHumanizeUppercase:@"phoneNumber"];
 
-    XCTAssertTrue([testString isEqualToString:@"Phone Number"], @"String is humanized uppercase");
+    XCTAssertEqualObjects(testString, @"Phone Number");
 }
 
 - (void)testHumanizeLowercase
 {
     NSString *testString = [NSString zen_stringWithHumanizeLowercase:@"phoneNumber"];
 
-    XCTAssertTrue([testString isEqualToString:@"phone number"], @"String is humanized lowercase");
+    XCTAssertEqualObjects(testString, @"phone number");
 }
 
 @end
