@@ -13,6 +13,14 @@
     NSString *testString = [NSString zen_stringWithCamelCase:@"zen-angst"];
 
     XCTAssertEqualObjects(testString, @"zenAngst");
+
+    testString = [NSString zen_stringWithCamelCase:@"random[0].hello-mom"];
+
+    XCTAssertNil(testString);
+
+    testString = [NSString zen_stringWithCamelCase:@"random.hello"];
+
+    XCTAssertNil(testString);
 }
 
 - (void)testClassifiedCase

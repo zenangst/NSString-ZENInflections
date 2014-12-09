@@ -160,13 +160,14 @@
             if ([scanner scanCharactersFromSet:lowercaseSet intoString:&buffer]) {
                 [output appendString:[buffer lowercaseString]];
             }
+        } else if ([scanner scanCharactersFromSet:alphanumericSet intoString:&buffer]) {
+            [output appendString:[buffer capitalizedString]];
         } else {
-            if ([scanner scanCharactersFromSet:alphanumericSet intoString:&buffer]) {
-                [output appendString:[buffer capitalizedString]];
-            }
+            output = nil;
+            break;
         }
     }
 
-    return [output copy];
+    return output;
 }
 @end
