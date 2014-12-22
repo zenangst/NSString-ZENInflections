@@ -1,5 +1,4 @@
-NSString-ZENInflections
-======================
+##NSString-ZENInflections
 
 Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of an NSString
 
