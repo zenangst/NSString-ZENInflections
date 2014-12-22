@@ -1,4 +1,5 @@
 ##NSString-ZENInflections
+[![Build Status](https://img.shields.io/travis/zenangst/NSString-ZENInflections.svg?style=flat)](https://travis-ci.org/zenangst/NSString-ZENInflections)
 
 Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of an NSString
 
