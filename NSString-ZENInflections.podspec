@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name = "NSString-ZENInflections"
-  s.version = "1.0"
-  s.summary = "Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of an NSString"
+  s.version = "1.1"
+  s.summary = "Returns camelCased, UpperCamelCased, dashed-case, snake_cased, humanized representations of an NSString"
   s.description = <<-DESC
-                   * Returns camelCased, UpperCamelCased, dashed-case, snake_cased representations of an NSString
+                   * Returns camelCased, UpperCamelCased, dashed-case, snake_cased, humanized representations of an NSString
                    DESC
   s.homepage = "https://github.com/zenangst/NSString-ZENInflections"
   s.license = {
